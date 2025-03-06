@@ -1,0 +1,80 @@
+body {
+  padding: 20px;
+  background-image: url('./assets/images/ROBOXEL-Glitchy_Backgrounds/PNG/Glitchy_Backgrounds-086.png');
+}
+
+@font-face {
+  font-family: 'BankGothic';
+  src: url('./assets/fonts/BankGothicMediumBT.ttf');
+}
+
+@font-face {
+  font-family: 'Jupiter';
+  src: url('./assets/fonts/Jupiter.otf');
+}
+
+h1 {
+  font-family: 'BankGothic';
+  font-size: 64px;
+  color: #ff0000;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  font-family: 'BankGothic';
+  font-size: 48px;
+  color: #ff0000;
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  font-family: 'Jupiter';
+  font-size: 20px;
+  color: #a60000;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.backdrop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1024px;
+    height: 720px;
+    background: rgb(24, 0, 0);
+    border-style: double;
+    border-color: #ff0000;
+    z-index: 100;
+}
+
+.backdropstampsleft {
+    position: absolute;
+    top: 11%; /* 50% from top + half of the backdrop height */
+    left: 20%;
+    transform: translate(-50%, 0);
+    width: 103px;
+    height: 720px;
+    background: rgb(0, 24, 3);
+    border-style: double;
+    border-color: #ff0000;
+    z-index: 102;
+}
+.backdropstampsright {
+  position: absolute;
+  top: 11%; /* 50% from top + half of the backdrop height */
+  right: 14.3%;
+  transform: translate(-50%, 0);
+  width: 103px;
+  height: 720px;
+  background: rgb(0, 24, 3);
+  border-style: double;
+  border-color: #ff0000;
+  z-index: 102;
+}
+
+.flip-horizontally {
+  transform: scaleX(-1);
+}

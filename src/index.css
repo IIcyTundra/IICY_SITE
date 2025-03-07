@@ -1,6 +1,14 @@
+html {
+  /* cursor: url(), auto; */
+}
+
+
 body {
   padding: 20px;
+  position: absolute;
   background-image: url('./assets/images/ROBOXEL-Glitchy_Backgrounds/PNG/Glitchy_Backgrounds-086.png');
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 @font-face {
@@ -28,26 +36,31 @@ h2 {
   text-align: center;
   margin-top: 20px;
 }
-
-p {
+h4 {
   font-family: 'Jupiter';
-  font-size: 20px;
-  color: #a60000;
+  color: #ff0000;
   text-align: center;
   margin-top: 20px;
 }
 
+.terminaltext {
+  font-family: 'Jupiter';
+  font-size: 15px;
+  color: #a274a4;
+  margin-bottom: -10px; /* Adjust the value as needed */
+}
+
 .backdrop {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1024px;
-    height: 720px;
-    background: rgb(24, 0, 0);
-    border-style: double;
-    border-color: #ff0000;
-    z-index: 100;
+  position: absolute;
+  margin-top: auto;
+  margin-left: 100%;
+  /* transform: translate(-50%, -50%); */
+  /* width: 1024px;
+  height: 720px; */
+  background: rgb(24, 0, 0);
+  border-style: double;
+  border-color: #ff0000;
+  z-index: -1;
 }
 
 .backdropstampsleft {
@@ -62,19 +75,31 @@ p {
     border-color: #ff0000;
     z-index: 102;
 }
-.backdropstampsright {
-  position: absolute;
-  top: 11%; /* 50% from top + half of the backdrop height */
-  right: 14.3%;
-  transform: translate(-50%, 0);
-  width: 103px;
-  height: 720px;
-  background: rgb(0, 24, 3);
-  border-style: double;
-  border-color: #ff0000;
-  z-index: 102;
-}
+
 
 .flip-horizontally {
   transform: scaleX(-1);
+}
+
+.typewriter{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 2s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgba(255, 0, 191, 0.386); }
 }

@@ -36,7 +36,7 @@ function App() {
         </div>
 
         <div style={{ marginTop: 52, justifyContent: 'center' }}>
-          <div class="window" style={{ marginRight: 20 }}>
+          <div class="window" >
             <div class="title-bar">
               <div class="title-bar-text">EN1GM4_Dev_0.5</div>
               <div class="title-bar-controls">

@@ -1,14 +1,69 @@
-html {
-  /* cursor: url(), auto; */
-}
 
 
-body {
-  padding: 20px;
-  position: absolute;
-  background-image: url('./assets/images/ROBOXEL-Glitchy_Backgrounds/PNG/Glitchy_Backgrounds-086.png');
-  background-size: cover;
-  background-attachment: fixed;
+@media (max-width: 428px) {
+  .responsive-text {
+    font-size: 14px;
+  }
+
+  .window {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  .window-body iframe {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .title-bar-text {
+    font-size: 12px;
+  }
+
+  .title-bar-controls button {
+    width: 20px;
+    height: 20px;
+  }
+
+  .content {
+    flex-direction: column;
+    display: flex;
+    font-size: 64px
+  }
+
+  .backdrop {
+    padding: 10px;
+    margin-right: 50%;
+    position: absolute;
+    margin-top: auto;
+    background: rgb(24, 0, 0);
+    border-style: double;
+    border-color: #ff0000;
+    z-index: -1;
+    align-content: center;
+    max-width: 400px;
+    height: max-content;
+  }
+
+  img.icon{
+    width: 15px;
+    height: 15px;
+  }
+
+  img.title{
+    width: 10%;
+    height: 10%;
+  }
+
+  img.stamps{
+    width: 50%;
+    height: 50%;
+  }
+
 }
 
 @font-face {
@@ -21,12 +76,20 @@ body {
   src: url('./assets/fonts/Jupiter.otf');
 }
 
+body {
+  padding: 20px;
+  position: absolute;
+  background-image: url('./images/ROBOXEL-Glitchy_Backgrounds/PNG/Glitchy_Backgrounds-086.png');
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+
+
 h1 {
   font-family: 'BankGothic';
   font-size: 64px;
   color: #ff0000;
   text-align: center;
-  margin-top: 20px;
 }
 
 h2 {
@@ -34,48 +97,47 @@ h2 {
   font-size: 48px;
   color: #ff0000;
   text-align: center;
-  margin-top: 20px;
 }
 h4 {
   font-family: 'Jupiter';
   color: #ff0000;
   text-align: center;
-  margin-top: 20px;
+}
+
+img.animated-gif{
+  transform: scale(0.5);
 }
 
 .terminaltext {
   font-family: 'Jupiter';
-  font-size: 15px;
-  color: #a274a4;
-  margin-bottom: -10px; /* Adjust the value as needed */
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: -10px;
+  padding-left: 10px; /* Adjust the value as needed */
+}
+
+.CMD-Background {
+  background: black;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Jupiter';
+}
+
+
+.main-content {
+  flex-direction: row;
+  display: flex;
 }
 
 .backdrop {
   position: absolute;
   margin-top: auto;
   margin-left: 100%;
-  /* transform: translate(-50%, -50%); */
-  /* width: 1024px;
-  height: 720px; */
   background: rgb(24, 0, 0);
   border-style: double;
   border-color: #ff0000;
   z-index: -1;
 }
-
-.backdropstampsleft {
-    position: absolute;
-    top: 11%; /* 50% from top + half of the backdrop height */
-    left: 20%;
-    transform: translate(-50%, 0);
-    width: 103px;
-    height: 720px;
-    background: rgb(0, 24, 3);
-    border-style: double;
-    border-color: #ff0000;
-    z-index: 102;
-}
-
 
 .flip-horizontally {
   transform: scaleX(-1);

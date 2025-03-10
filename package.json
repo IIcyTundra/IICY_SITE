@@ -1,5 +1,5 @@
 {
-  "homepage":  "https://iicytundra.github.io/IICY_SITE/",
+  "homepage": "https://iicytundra.github.io/IICY_SITE/",
   "name": "neocities",
   "private": true,
   "version": "0.0.0",
@@ -10,12 +10,13 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages -d dist --add --silent"
+    "deploy": "gh-pages -b gh-pages -d dist --add"
   },
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "three": "^0.174.0",
+    "typeit-react": "^2.7.8",
     "xp.css": "^0.2.6"
   },
   "devDependencies": {
